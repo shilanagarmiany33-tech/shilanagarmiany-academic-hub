@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پرتووکخانەی شیلاناگرمیانی | Shilanagarmiany Academic Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>📚 شیلاناگرمیانی</h1>
+                <p>پرتووکخانەی زانستی و ئەکادیمی</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">ماڵەوە</a></li>
+                <li><a href="#reports">ڕاپۆرتەکان</a></li>
+                <li><a href="#research">توێژینەوە</a></li>
+                <li><a href="#workshops">ورکشاپ</a></li>
+                <li><a href="#upload">باربکردن</a></li>
+                <li><a href="#contact">پەیوەندی</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>بە خێرا بێن گەیاندنی ڕاپۆرتی زانستیت</h2>
+            <p>وێبسایتی AI-Powered بۆ خوێندکاران و پەژوهێران</p>
+            <a href="#upload" class="btn btn-primary">دەست پێ بکە</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Upload Section -->
+        <section id="upload" class="section">
+            <h2>📤 فایلەکانت بارب بکە</h2>
+            <div class="upload-box">
+                <input type="file" id="fileInput" multiple accept=".pdf,.docx,.xlsx,.pptx,.txt">
+                <p>فایلە Word، PDF، Excel، PowerPoint یان Text بارب بکە</p>
+                <button class="btn btn-secondary" onclick="document.getElementById('fileInput').click()">فایل هەڵبژێرە</button>
+            </div>
+            <div id="uploadedFiles" class="files-list"></div>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports" class="section">
+            <h2>📋 ڕاپۆرتەکانی ئەکادیمی</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🎓 ڕاپۆرتی کوردی</h3>
+                    <p>ڕاپۆرتی زانستی بە زمانی کوردی</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>📊 ڕاپۆرتی ئەنگلیزی</h3>
+                    <p>Academic Reports in English</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>🔬 ڕاپۆرتی تێکنیکی</h3>
+                    <p>Technical & Research Reports</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h2>🔬 توێژینەوەی زانستی</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>📚 تێزنامە</h3>
+                    <p>PhD Dissertations</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>🎯 نامەی ماستەر</h3>
+                    <p>Master's Theses</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>📰 مقالەی زانستی</h3>
+                    <p>Research Papers</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section id="workshops" class="section">
+            <h2>🏢 ورکشاپ و سمینار</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>📊 سمینار</h3>
+                    <p>پڕاسپاردەی سمینار و پریزەنتەیشن</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>🎓 ورکشاپ</h3>
+                    <p>Workshop Materials & Resources</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+                <div class="card">
+                    <h3>💡 تێبینی فێرکاری</h3>
+                    <p>Educational Notes & Guidelines</p>
+                    <a href="#" class="btn btn-small">دیتنی زیاتر</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section id="ai-assistant" class="section ai-section">
+            <h2>🤖 یارمەتیدەری AI</h2>
+            <div class="ai-chat">
+                <div id="chatBox" class="chat-box"></div>
+                <div class="input-group">
+                    <input type="text" id="userInput" placeholder="پرسیارەکەت بنووسە..." dir="rtl">
+                    <button class="btn btn-primary" onclick="sendMessage()">نێرە</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 شیلاناگرمیانی | Shilanagarmiany Academic Hub</p>
+        <p>AI-Powered Platform for Academic Excellence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
